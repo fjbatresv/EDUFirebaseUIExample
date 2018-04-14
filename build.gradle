@@ -1,0 +1,59 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    
+    repositories {
+        google()
+        jcenter()
+        maven {
+            url 'https://maven.fabric.io/public'
+        }
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.0.1'
+        classpath 'com.google.gms:google-services:3.2.0'
+        classpath 'com.google.firebase:firebase-plugins:1.1.5'
+        classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
+        classpath 'io.fabric.tools:gradle:1.24.4'
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        maven { url "https://www.jitpack.io" }
+        maven { url 'https://maven.fabric.io/public' }
+        maven { url "https://maven.google.com" }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+ext{
+    compiledSdkVersion = 26
+    minSdkVersion = 22
+    targetSdkVersion = 26
+    buildToolsVersion = "26.0.2"
+    supportLibraryVersion = "26.0.2"
+    firebaseUiVersion = '3.3.0'
+    firebaseVersion = '12.0.1'
+    eventBusVersion = '3.1.1'
+    fabDialVersion = "1.0.6"
+    aboutVersion = "1.2.1"
+    circleImageViewVersion = '2.1.0'
+    butterknifeVersion = '8.8.1'
+    eventBusVersion = '3.0.0'
+    daggerVersion = '2.0.1'
+    glideVersion = '4.0.0'
+    jsr250Version = '1.0'
+    retrofitVersion = "2.3.0"
+    facebookVersion = "4.27.0"
+    twitterVersion = "3.0.0@aar"
+    AppIntroVersion = "v4.2.2"
+    zxingVersion = "3.4.0"
+}
