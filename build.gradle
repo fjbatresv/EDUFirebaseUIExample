@@ -10,7 +10,7 @@ buildscript {
         }
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.0.1'
+        classpath 'com.android.tools.build:gradle:3.1.2'
         classpath 'com.google.gms:google-services:3.2.0'
         classpath 'com.google.firebase:firebase-plugins:1.1.5'
         classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
@@ -40,8 +40,8 @@ ext{
     targetSdkVersion = 26
     buildToolsVersion = "26.0.2"
     supportLibraryVersion = "26.0.2"
-    firebaseUiVersion = '3.3.0'
-    firebaseVersion = '12.0.1'
+    firebaseUiVersion = '3.3.1'
+    firebaseVersion = '15.0.2'
     eventBusVersion = '3.1.1'
     fabDialVersion = "1.0.6"
     aboutVersion = "1.2.1"
